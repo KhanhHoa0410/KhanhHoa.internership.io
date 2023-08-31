@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Play&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Bold' rel='stylesheet'>
+    <link rel="stylesheet" href="index.scss">
+    <title>TPCARE-SẠCH, THƠM, AN TOÀN!</title>
+    <link REL="SHORTCUT ICON" HREF="images/logo.png">
+    <script src="index.js"></script>
+</head>
+<button id="myBtn" title="Lên đầu trang" style="background-color: #26355F;"><img src='icon/up top.jpg'
+        title='lên đầu trang' width='14px' style="background-color: #26355F;" /></button>
+<script>
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    document.getElementById('myBtn').addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        document.body.duration = 750;
+        document.body.offset = 500;
+    });
+
+</script>
+<body>
+    <section class="header-top">
+        <div class="container">
+            <div class="ba">
+                <div class="col-6 d-flex" style="margin-left: -80px;">
+                    <div class="header-contact">
+                        <i class="fas fa-phone-volume">
+                        </i>
+                        <a href="tel:0247.3088.845" style="color: rgba(119, 119, 119, 1);">
+                            Hotline: 0247.3088.845
+                        </a>
+                    </div>
+                    <div class="header-contact">
+                        <i class="fas fa-envelope" style="margin-left: 20px"></i>
+                        <a href="mailto:tpcarevietnam@gmail.com" style="color: rgba(119, 119, 119, 1);">
+                            Email: tpcarevietnam@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="header-social">
+                        <div class="ic" style="margin-left: 400px;">
+                            <a href="https://www.facebook.com/tpcarevietnam">
+                                <i class="fab fa-facebook-" style="margin-left: 400    px; margin-right: 10px;"><svg
+                                        width="5" height="12" viewBox="0 0 5 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.10226 11.8496C1.10226 11.8895 1.11646 11.9278 1.14175 11.956C1.16705 11.9842 1.20135 12 1.23711 12H3.17119C3.20669 11.9991 3.24051 11.9829 3.26562 11.9549C3.29073 11.9269 3.30521 11.8892 3.30604 11.8496V5.95232H4.70726C4.74138 5.95242 4.77427 5.9381 4.79929 5.91224C4.82432 5.88638 4.83962 5.8509 4.84212 5.81296L4.97698 4.03423C4.97832 4.0134 4.97585 3.99249 4.96971 3.97275C4.96358 3.95302 4.95391 3.93489 4.9413 3.91945C4.92869 3.90402 4.91339 3.8916 4.89634 3.88296C4.87929 3.87432 4.86084 3.86964 4.84212 3.86919H3.30604V2.61491C3.30604 2.5446 3.31846 2.47497 3.3426 2.41001C3.36673 2.34504 3.40211 2.28601 3.4467 2.23629C3.49129 2.18657 3.54423 2.14713 3.6025 2.12022C3.66076 2.09331 3.72321 2.07946 3.78627 2.07946H4.86514C4.90091 2.07946 4.93521 2.06362 4.9605 2.03542C4.98579 2.00722 5 1.96898 5 1.9291V0.150367C5 0.13062 4.99651 0.111067 4.98973 0.0928239C4.98296 0.0745806 4.97302 0.0580042 4.9605 0.0440414C4.94798 0.0300786 4.93311 0.0190026 4.91675 0.011446C4.90039 0.00388935 4.88285 0 4.86514 0H3.03962C2.5258 0 2.03302 0.227586 1.6697 0.632692C1.30637 1.0378 1.10226 1.58724 1.10226 2.16015V3.87286H0.13522C0.116648 3.87281 0.0982666 3.87703 0.0812267 3.88526C0.0641867 3.8935 0.0488559 3.90557 0.036195 3.92072C0.0235341 3.93587 0.0138161 3.95377 0.00765001 3.9733C0.00148389 3.99284 -0.000997433 4.01358 0.000361545 4.03423V5.81296C0.000361545 5.85284 0.0145698 5.89108 0.0398607 5.91928C0.0651516 5.94748 0.0994535 5.96333 0.13522 5.96333H1.10226V11.8496Z"
+                                            fill="#777777" />
+                                    </svg>
+                                </i>
+                            </a>
+                            <a>
+                                <i class="fab fa-instagra" style="margin-right: 10px;"><svg width="12" height="12"
+                                        viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.14152 2.20803C9.00244 2.20803 8.86648 2.24927 8.75084 2.32654C8.6352 2.40381 8.54507 2.51363 8.49185 2.64212C8.43863 2.77061 8.4247 2.912 8.45184 3.04841C8.47897 3.18481 8.54594 3.31011 8.64429 3.40845C8.74263 3.5068 8.86792 3.57377 9.00433 3.6009C9.14074 3.62804 9.28213 3.61411 9.41062 3.56089C9.53911 3.50766 9.64893 3.41754 9.7262 3.3019C9.80347 3.18626 9.84471 3.0503 9.84471 2.91122C9.84471 2.72472 9.77063 2.54586 9.63875 2.41399C9.50688 2.28211 9.32802 2.20803 9.14152 2.20803ZM6.01934 3.11515C5.43297 3.11515 4.85978 3.28907 4.37228 3.61491C3.88479 3.94075 3.50489 4.40387 3.28066 4.94566C3.05643 5.48746 2.99794 6.0836 3.11259 6.65864C3.22724 7.23369 3.50988 7.76181 3.92475 8.17619C4.33962 8.59057 4.86807 8.87258 5.44326 8.98655C6.01844 9.10051 6.6145 9.04132 7.15603 8.81644C7.69757 8.59157 8.16023 8.21112 8.48549 7.72324C8.81075 7.23536 8.98399 6.66196 8.9833 6.07559C8.98144 5.2904 8.66846 4.53794 8.11291 3.98305C7.55736 3.42817 6.80454 3.11608 6.01934 3.11515ZM6.01934 7.97422C5.64383 7.97422 5.27675 7.86286 4.96452 7.65424C4.65229 7.44562 4.40894 7.14909 4.26524 6.80217C4.12154 6.45524 4.08394 6.07349 4.1572 5.70519C4.23045 5.33689 4.41128 4.99859 4.67681 4.73306C4.94234 4.46754 5.28064 4.28671 5.64894 4.21345C6.01723 4.14019 6.39898 4.17779 6.74591 4.32149C7.09284 4.4652 7.38936 4.70855 7.59798 5.02077C7.80661 5.333 7.91796 5.70008 7.91796 6.07559C7.91703 6.57885 7.7167 7.06124 7.36084 7.4171C7.00498 7.77296 6.5226 7.97329 6.01934 7.97422ZM11.9965 3.61442C11.9965 2.65642 11.6162 1.73761 10.9391 1.05988C10.262 0.382147 9.34358 0.0009319 8.38558 0H3.61442C2.65581 0 1.73647 0.380803 1.05864 1.05864C0.380803 1.73647 0 2.65581 0 3.61442V8.38558C0 9.34419 0.380803 10.2635 1.05864 10.9414C1.73647 11.6192 2.65581 12 3.61442 12H8.38558C9.34419 12 10.2635 11.6192 10.9414 10.9414C11.6192 10.2635 12 9.34419 12 8.38558L11.9965 3.61442ZM10.8679 8.38558C10.8679 9.04392 10.6063 9.6753 10.1408 10.1408C9.6753 10.6063 9.04392 10.8679 8.38558 10.8679H3.61442C2.95608 10.8679 2.3247 10.6063 1.85918 10.1408C1.39367 9.6753 1.13214 9.04392 1.13214 8.38558V3.61442C1.13214 2.95608 1.39367 2.3247 1.85918 1.85918C2.3247 1.39367 2.95608 1.13214 3.61442 1.13214H8.38558C9.04392 1.13214 9.6753 1.39367 10.1408 1.85918C10.6063 2.3247 10.8679 2.95608 10.8679 3.61442V8.38558Z"
+                                            fill="#777777" />
+                                    </svg></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-twitte" style="margin-right: 10px;"><svg width="15" height="12"
+                                        viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.943 1.44506C14.4596 1.6493 13.9508 1.79116 13.4295 1.86702C13.6747 1.8395 14.0331 1.38085 14.1745 1.22491C14.4011 0.961704 14.5725 0.657857 14.679 0.33054C14.679 0.303021 14.7026 0.270915 14.679 0.252569C14.6665 0.246842 14.6528 0.243872 14.6389 0.243872C14.6251 0.243872 14.6114 0.246842 14.5988 0.252569C14.0305 0.550081 13.4252 0.775143 12.7977 0.922201C12.7763 0.928786 12.7533 0.929263 12.7316 0.923574C12.7099 0.917885 12.6903 0.906268 12.6751 0.890095C12.6253 0.834734 12.5717 0.78264 12.5148 0.734154C12.255 0.517503 11.9603 0.343951 11.6426 0.220464C11.2198 0.0531345 10.764 -0.0205032 10.3082 0.00489719C9.86526 0.034658 9.43342 0.153342 9.03992 0.353473C8.64476 0.556216 8.29654 0.835633 8.01678 1.17446C7.72543 1.52195 7.51618 1.92749 7.40383 2.36237C7.31044 2.77538 7.29924 3.20196 7.37083 3.61907C7.37083 3.69246 7.37083 3.70163 7.30953 3.69246C4.8389 3.33471 2.7879 2.47244 1.12824 0.628664C1.0528 0.550693 1.01508 0.550693 0.953783 0.628664C0.22768 1.69274 0.581302 3.38057 1.49129 4.23367C1.61027 4.34939 1.73623 4.45813 1.86848 4.55931C1.45287 4.52724 1.04768 4.41663 0.675601 4.23367C0.604876 4.19239 0.567157 4.23367 0.562442 4.29329C0.551069 4.40922 0.551069 4.52594 0.562442 4.64187C0.636289 5.18325 0.856255 5.69594 1.19996 6.12776C1.54366 6.55958 1.99883 6.89512 2.51915 7.10024C2.64553 7.15492 2.77865 7.19346 2.9152 7.2149C2.52914 7.29435 2.13168 7.30677 1.74118 7.2516C1.65631 7.2516 1.62331 7.27911 1.65631 7.35709C1.85732 7.86729 2.18887 8.31915 2.61956 8.66989C3.05026 9.02063 3.56584 9.25864 4.11751 9.36139C4.23067 9.36139 4.33912 9.36139 4.45227 9.40726C4.17409 9.81546 3.21696 10.1182 2.77375 10.2695C1.95768 10.556 1.08712 10.6656 0.222965 10.5906C0.081517 10.5676 0.0532273 10.5906 0.0155077 10.5906C-0.0222119 10.5906 0.0155077 10.6456 0.0579423 10.6777C0.232395 10.7924 0.406849 10.8887 0.586017 10.985C1.1289 11.2654 1.70111 11.4883 2.29283 11.6501C5.35755 12.4711 8.80889 11.8656 11.1098 9.64117C12.9156 7.89829 13.5474 5.5133 13.5474 3.07786C13.5474 2.98155 13.6653 2.9311 13.7313 2.88064C14.1882 2.53649 14.5901 2.12846 14.9242 1.6698C14.9769 1.60291 15.0036 1.52007 14.9996 1.43589C14.9996 1.40837 15.0043 1.41754 14.943 1.44506Z"
+                                            fill="#777777" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.96149 11.9849C4.96149 11.9574 5.22553 11.9849 4.96149 11.9849C4.96149 11.9711 4.99449 11.9849 4.96149 11.9849Z"
+                                            fill="#777777" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.2658 0.00489719C10.2573 0.0120031 10.2464 0.0159079 10.2352 0.0159079C10.2239 0.0159079 10.2131 0.0120031 10.2045 0.00489719H10.2658Z"
+                                            fill="#777777" />
+                                    </svg>
+                                </i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCvdifP3dy6avDty3K8BD_Jw">
+                                <i class="fab fa-youtub"><svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 3.42181C15.0006 2.97228 14.9165 2.52705 14.7526 2.11162C14.5886 1.69619 14.348 1.31873 14.0446 1.00086C13.7412 0.682996 13.3809 0.430971 12.9844 0.259226C12.5878 0.0874811 12.1628 -0.000608855 11.7337 3.16732e-06H3.26627C2.83718 -0.000608855 2.41218 0.0874811 2.01564 0.259226C1.61909 0.430971 1.25879 0.682996 0.955369 1.00086C0.651951 1.31873 0.411382 1.69619 0.247443 2.11162C0.0835047 2.52705 -0.00058118 2.97228 3.02335e-06 3.42181V7.57819C-0.00058118 8.02772 0.0835047 8.47295 0.247443 8.88838C0.411382 9.30381 0.651951 9.68127 0.955369 9.99914C1.25879 10.317 1.61909 10.569 2.01564 10.7408C2.41218 10.9125 2.83718 11.0006 3.26627 11H11.7337C12.1628 11.0006 12.5878 10.9125 12.9844 10.7408C13.3809 10.569 13.7412 10.317 14.0446 9.99914C14.348 9.68127 14.5886 9.30381 14.7526 8.88838C14.9165 8.47295 15.0006 8.02772 15 7.57819V3.42181ZM9.67455 5.70921L6.29734 7.64793C6.15089 7.73161 6.01775 7.62003 6.01775 7.44801V3.46365C6.01775 3.28698 6.15533 3.1754 6.30178 3.26374L9.70118 5.30473C9.73353 5.32884 9.75911 5.36159 9.77526 5.39958C9.79141 5.43756 9.79754 5.47939 9.793 5.5207C9.78847 5.56201 9.77344 5.6013 9.74949 5.63445C9.72553 5.66761 9.69353 5.69343 9.6568 5.70921H9.67455Z"
+                                            fill="#777777" />
+                                    </svg></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header-sticky">
+        <div class="header-center">
+            <div class="row">
+                <div class="logo" style="margin-left: 20px;">
+                    <a href="index.html">
+                        <img src="images/TP care 2.jpg" alt="TPCARE - SẠCH, THƠM, AN TOÀN!"
+                            class=" ls-is-cached lazyloaded">
+                    </a>
+                </div>
+                <div class="seach">
+                    <form action="/tim-san-pham" class="form-header">
+                        <div class="input-group" style="width: 580px; margin-left: 40px;">
+                            <div class="input-group-prepend">
+                                <select class="select-cat" name="catId"> ;
+                                    <option selected="" disabled="">Theo danh mục</option>
+                                    <option value="7">Nước rửa bát sinh học</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-control" name="keywords" required=""
+                                placeholder="Tìm sản phẩm, danh mục mong muốn ...">
+                            <div class="input-group-append">
+                                <button type="submit" class="submit">
+                                    <i class="far fa-searc"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.03368 0.828332C5.09154 0.282623 6.26474 -0.00140935 7.45494 5.25819e-06C8.85626 0.00134408 10.2288 0.398292 11.4147 1.14523C12.6006 1.89214 13.5517 2.9587 14.1588 4.22232C14.7659 5.48595 15.0043 6.89532 14.8465 8.28843C14.6887 9.68154 14.1413 11.0018 13.267 12.0975L17.7594 16.5922C17.9135 16.7473 18 16.9571 18 17.1757C18 17.3944 17.9135 17.6042 17.7594 17.7593C17.6044 17.9135 17.3947 18 17.1761 18C16.9576 18 16.7479 17.9135 16.5929 17.7593L12.1004 13.2646C11.1714 14.009 10.0776 14.5197 8.91063 14.7539C7.74368 14.9881 6.53762 14.939 5.39353 14.6108C4.24944 14.2826 3.20067 13.6847 2.33512 12.8674C1.46957 12.05 0.812468 11.037 0.418897 9.91318C0.0253136 8.78938 -0.093265 7.58754 0.0730961 6.40845C0.239457 5.22935 0.685898 4.10734 1.37501 3.13644C2.06413 2.16554 2.97582 1.37407 4.03368 0.828332ZM12.0922 10.9221C12.9696 9.74914 13.3703 8.28714 13.2137 6.83043C13.057 5.37374 12.3546 4.03049 11.2478 3.07111C10.141 2.11173 8.71211 1.60745 7.24867 1.65979C5.78521 1.71213 4.39591 2.31718 3.36043 3.35318C2.32495 4.38917 1.72018 5.77915 1.66788 7.24334C1.61557 8.70751 2.1196 10.1371 3.0785 11.2445C4.0374 12.3518 5.37998 13.0545 6.83596 13.2113C8.29194 13.368 9.75322 12.9671 10.9256 12.0892C11.3645 11.7537 11.7568 11.3612 12.0922 10.9221Z"
+                                                fill="#555555" />
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4 d-flex justify-content-betwee" style="margin-left: 30px;">
+                    <a href="tel:0247.3088.845" class="hotline">
+                        <i class="fas fa-phone-volum"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.4181 8.3653C10.0738 7.96559 9.47136 7.90849 9.06973 8.27965C9.04104 8.3082 9.01235 8.33675 8.98366 8.3653C8.6394 8.70791 8.29515 9.05051 7.97958 9.39312C7.9222 9.47877 7.77876 9.50732 7.69269 9.45022C7.46319 9.33602 7.23368 9.22182 7.03287 9.10761C6.05747 8.4795 5.19683 7.70864 4.47962 6.79502C4.10668 6.36676 3.79111 5.85286 3.5616 5.33895C3.50423 5.25329 3.53292 5.13909 3.61898 5.08199C3.96324 4.76794 4.27881 4.42533 4.62306 4.08272C5.0247 3.74012 5.08207 3.14056 4.73782 2.74085C4.70913 2.68375 4.65175 2.6552 4.59438 2.5981C4.33618 2.34114 4.0493 2.05564 3.79111 1.79868C3.50423 1.51318 3.24603 1.25622 2.95915 0.970717C2.64358 0.57101 2.01244 0.513909 1.61081 0.885066C1.58212 0.913616 1.55343 0.942167 1.52475 0.970717C1.18049 1.28477 0.864919 1.62738 0.520661 1.96999C0.205092 2.25549 0.0329631 2.6552 0.00427495 3.08346C-0.0244132 3.76867 0.0903394 4.48243 0.377221 5.11054C0.893607 6.45242 1.6395 7.68009 2.58621 8.76501C3.8198 10.2496 5.36896 11.4488 7.09024 12.2767C7.86482 12.6764 8.72547 12.9334 9.58611 12.9905C10.1886 13.0476 10.7623 12.8477 11.164 12.3909C11.4508 12.0769 11.7951 11.7628 12.082 11.4488C12.4836 11.1061 12.541 10.478 12.1967 10.0783C12.168 10.0498 12.1394 9.99268 12.082 9.96413C11.5082 9.45022 10.9631 8.90776 10.4181 8.3653ZM9.95906 5.4246L10.791 5.28184C10.5041 3.65447 9.21317 2.42679 7.57794 2.19839L7.46319 3.0549C8.72547 3.19766 9.72955 4.16837 9.95906 5.4246ZM11.2787 1.77013C10.3033 0.799414 9.06973 0.171303 7.69269 0L7.57794 0.856515C9.90168 1.17057 11.7664 2.96925 12.168 5.28184L13 5.13909C12.7992 3.85432 12.1967 2.68375 11.2787 1.77013Z"
+                                    fill="white" />
+                            </svg></i>
+                        Hotline: 0247.3088.845
+                    </a>
+                    <ul class="language" id="google_translate_element2" style="margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;
+                    margin-inline-end: 0px;padding-inline-start: 20px; margin-bottom: 1px   ; ">
+                        <li style="margin-right: 10px; ">
+                            TIẾNG VIỆT
+                        </li>
+                        <li style="margin-right: 10px;">
+                            <a href="javascript:;" onclick="doTranslate('vi|vi')">
+                                <img src="images\Vietnam@10x.jpg" alt="Viet Nam" width="25" height="15">
+                            </a>
+                        </li>
+                        <li class="line" style="background-color: #26A9E1;height:25px ;width: 1px;margin-top: -5px;">
+                        </li>
+                        <li style="margin-left: 10px;">
+                            <a href="javascript:;" onclick="doTranslate('vi|en')">
+                                <img src="images\United Kingdom@10x.jpg" alt="England">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="mycolor" style="background-color: #26355F;">
+                <div class="container">
+                    <ul class="nav">
+                        <li>
+                            <span class="btn-hover" style=" font-weight: 500;"><a href="index.html"
+                                    style="color: #fff;">TRANG CHỦ</a></span>
+                        </li>
+                        <li>
+                            <span class="btn-hover" style="margin-left: 20px; font-weight: 500;">GIỚI THIỆU VỀ CHÚNG
+                                TÔI</span>
+
+                        </li>
+                        <li class="dropdown">
+                            <span class="dropdown" type="button">
+                                <a href="product.html" style="color: #fff;font-weight: 500;">SẢN PHẨM</a>
+                                <i class='fa fa-chevron-down'></i>
+                            </span>
+                            <ul class="dropdown-menu" >
+                                <li><a class="dropdown-item" href="#">Nước rửa bát sinh học</a></li>
+                                <li><a class="dropdown-item" href="#">Nước rửa bát đậm đặc</a></li>
+                                <li><a class="dropdown-item" href="#">Nước lau sàn thảo mộc</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="btn-hover" style="margin-left: 20px;font-weight: 500;"><a style="color: #fff;" href="detailprodct.html">LIÊN HỆ</a></span>
+                        </li>
+                        <li>
+                            <span class="btn-hover" style="margin-left: 20px;font-weight: 500;"> TIN TỨC</span>
+                        </li>
+                        <li>
+                            <span class="btn-hover" style="margin-left: 20px;font-weight: 500;">HOẠT ĐỘNG</span>
+                        </li>
+                        <li>
+                            <span class="btn-hover" style="margin-left: 20px;font-weight: 500;">TUYỂN DỤNG</span>
+                        </li>
+                        <p></p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner-item">
+        <!-- <ul>
+            <img src="Images\tpcare product.jpg" alt="Blogs" style="width: 100%;height: 100%;">
+        </ul> -->
+        <div class="banner-slick">
+            <div>
+                <img src="images\tpcare product.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div>
+                <img src="images/Banner2.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div>
+                <img src="images/Banner3.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div>
+                <img src="images/Banner4.jpg" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </section>
+    <section class="introduce">
+        <div class="container">
+            <div class="introduce-1">
+                <div class="intro-img" data-aos="fade-up">
+
+                    <img src="images/Rectangle 505.jpg" alt="Ảnh giới thiệu" class=" ls-is-cached lazyloaded">
+                </div>
+                <div class="intro-content">
+                    <p style="text-align: justify;"><span style="color:#26355f;"><strong><span
+                                    style="font-size:28px;">TPCARE – SẠCH, THƠM, AN TOÀN!</span></strong></span></p>
+
+                    <p style="text-align: justify;"><span style="color:#777777;"><span style="font-size:16px;">Xuất thân
+                                từ
+                                kế toán nhưng đam mê kinh doanh nên tôi đã chuyển nghề và tạo được chỗ đứng trên thị
+                                trường
+                                với việc phân phối hóa mỹ phẩm nhập khẩu Thái Lan.</span></span></p>
+
+                    <p style="text-align: justify;"><span style="color:#777777;"><span style="font-size:16px;">Tuy
+                                nhiên,
+                                mong muốn tạo ra sản phẩm cho riêng mình, được sản xuất trên đất nước Việt và tạo được
+                                công
+                                việc, thu nhập cho người dân nên tôi không ngừng học hỏi, nghiên cứu và cho ra đời
+                                thương
+                                hiệu TPCare Chuyên gia tẩy rửa an toàn.</span></span></p>
+
+                    <p style="text-align: justify;"><span style="color:#777777;"><span style="font-size:16px;">Với đủ
+                                tiêu
+                                chí SẠCH - THƠM - AN TOÀN, các sản phẩm mang thương hiệu TPCare của Công Ty TNHH Xuất
+                                Nhập
+                                Khẩu Xuân Trường Phát đang được đông đảo người tiêu dùng tin tưởng sử dụng và có mặt
+                                trên
+                                nhiều hệ thống siêu thị, đại lý. Tôi hoàn toàn tự tin một ngày đem sản phẩm của mình
+                                xuất
+                                khẩu, khẳng định vị thế trên thị trường quốc tế.</span></span></p>
+                    <div class="btn-about-content"><a href="/" style="color: #fff;">Xem thêm</a></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="policy">
+        <div class="container">
+            <div><br></div>
+            <div class="title-sesion">TPCARE CAM KẾT CHÍNH SÁCH BÁN HÀNG</div>
+
+            <div class="poli" style="font-size: 1rem;font-weight: 400;line-height: 1.5;">
+                đảm bảo đúng hàng đúng chất lượng</div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-img">
+                        <img src="images/Group 1.png" alt="Bảo vệ">
+                    </div>
+                    <div class="policy-name">Cam kết an toàn cho người sử dụng</div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-img">
+                        <img src="images/Group 2.png" alt="">
+                    </div>
+                    <div class="policy-name" style="margin-top: -10px;">Giao hàng nhanh chóng</div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-img">
+                        <img src="images/Group 3.png" alt="">
+                    </div>
+                    <div class="policy-name">Cơ chế đổi trả linh hoạt</div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-img">
+                        <img src="images/Group 4.png" alt="">
+                    </div>
+                    <div class="policy-name">Cam kết 100% hàng chính hãng</div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-img">
+                        <img src="images/Group 5.png" alt="">
+                    </div>
+                    <div class="policy-name">Chính sách giá sỉ vô cùng hấp dẫn</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="panther">
+        <div class="container">
+            <h3 class="title-panther">ĐỐI TÁC VÀ KHÁCH HÀNG</h3>
+            <div class="panther-ic">
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt4 - Copy.png" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt5.png" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt6.png" alt="">
+                    </div>
+                </div>
+                <div class="images-iteam">
+                    <div class="image-panther">
+                        <img src="banner/dt7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="system">
+        <div class="container" style="background-image: url(banner/Ellipse\ 30.png) no-repeat top center/cover;">
+            <div class="title-system"> HỆ SINH THÁI MÀ TPCARE CUNG CẤP</div>
+            <div class="row">
+                <div class="content-system">
+                    <div class="cnst">
+                        <div class="img-sys"><img src="images/sys1.png" alt="?"></div>
+                        <div>
+                            <div class="name-sys">Môi trường chuyên nghiệp</div>
+                            <div class="body-sy">Đội ngũ lãnh đạo, nhân viên luôn hết lòng chăm sóc, phục vụ khách hàng,
+                                đem đến những chương trình, chính sách giá vô cùng hấp dẫn cho các nhà phân phối, đại lý
+                                sỉ lẻ trên toàn quốc. Vận chuyển nhanh chóng, chuyên nghiệp và linh hoạt đổi trả hàng
+                                hóa.</div>
+                        </div>
+                    </div>
+                    <div class="cnst">
+                        <div class="img-sys"><img src="images/sys2.png" alt="?"></div>
+                        <div>
+                            <div class="name-sys">Tâm huyết trong sản xuất</div>
+                            <div class="body-sy">Sản xuất trên dây chuyền công nghệ tiên tiến, cho ra đời các sản phẩm
+                                với chất lượng 5* đủ tiêu chuẩn SẠCH -THƠM - AN TOÀN.</div>
+                        </div>
+                    </div>
+                    <div class="cnst">
+                        <div class="img-sys"><img src="images/sys3.png" alt="?"></div>
+                        <div>
+                            <div class="name-sys">Trao uy tín - nhận niềm tin</div>
+                            <div class="body-sy">Với dịch vụ khách hàng 5* đảm bảo:
+                                + Cam kết an toàn cho người sử dụng
+                                + Giao hàng trong vòng 48h
+                                + Cơ chế độ trả linh hoạt
+                                + Cam kết 100% hàng chính hãng
+                                + Chính sách sỉ vô cùng hấp dẫn</div>
+                        </div>
+                    </div>
+                    <div class="cnst">
+                        <div class="img-sys"><img src="images/sys5.jpg" alt="?"></div>
+                        <div>
+                            <div class="name-sys">Gửi gắm yêu thương trọn vẹn</div>
+                            <div class="body-sy">Không chỉ là những sản phẩm tẩy rửa, các sản phẩm của TPcare còn
+                                gói ghém yêu thương, đong đầy sự quan tâm đối với các thành viên trong gia đình.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-content"
+                    style="margin-right: 20px;width: 500px;height: 500px ;background-image: url(banner/Ellipse\ 30.png); ">
+                    <img src="images\sp 1.png" alt="Sản phẩm" style="width: 500px;height: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="special">
+        <div class="container">
+            <div class="title-special">ĐIỂM ĐẶC BIỆT CỦA TPCARE</div>
+            <div class="cnst-special">
+                <div class="special-item" style="background-image: url(banner/banner\ about1.jpg);">
+                    <div class="name-special">NGUYÊN LIỆU NHẬP KHẨU</div>
+                    <div class="content-special">Nguyên liệu được nhập khẩu từ Châu Âu như Đức, Pháp luôn đem lại cho
+                        người sử dụng trải nghiệm tuyệt vời nhất.</div>
+                </div>
+                <div class="special-item" style="background-image: url(banner/banner\ about2.jpg); margin-left: 30px;">
+                    <div class="name-special">AN TOÀN CHO CẢ GIA ĐÌNH</div>
+                    <div class="content-special">Với tiêu chí sản phẩm vì sức khỏe cho người sử dụng lên hàng đầu.
+                        TPCare vừa cùng mẹ chăm sóc cả gia đình vừa đảm bảo tính an toàn tuyệt đối, kể cả đối với trẻ
+                        nhỏ.
+                        Hương thơm nhẹ nhàng không gây kích ứng cho những người mẫn cảm nhất.</div>
+                </div>
+                <div class="special-item" style="background-image: url(banner/banner\ about3.jpg);margin-left: 30px; ">
+                    <div class="name-special">TIỆN LỢI TRONG SỬ DỤNG</div>
+                    <div class="content-special">Chỉ cần đổ một lượng nhỏ vừa đủ là áo quần tinh tươm, sàn nhà bóng
+                        loáng, bát đĩa sạch bóng. Có TPcare đồng hành, việc dọn dẹp chỉ một loáng là xong.
+                        Trời nồm, ẩm ướt cũng không còn là vấn đề đáng lo ngại. Có TPCare, áo quần luôn thơm mát.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="product-hot">
+        <div class="box-product-hot">
+            <div class="text-center">
+                <div class="title-section">
+                    BÁN CHẠY NHẤT
+                </div>
+            </div>
+            <div class="rowpro">
+                <div class="pro">
+                    <div class="product-item" style="margin-right: 20px;">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product/product1.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item" style="margin-right: 20px;">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product3.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item" style="margin-right: 20px;">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product/product4.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product2.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                    <i class=""><svg class="svg-icon"
+                                            style="width: 1.001953125em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                            viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M559.826357 38.096844l114.290533 234.930541c6.349474 19.048422 25.397896 31.74737 44.446319 31.74737l247.629488 38.096844c50.795792 6.349474 69.844215 69.844215 31.74737 107.941059L820.154794 634.947406c-12.698948 12.698948-19.048422 31.74737-19.048422 57.145267l44.446318 260.328436c6.349474 50.795792-44.446318 88.892637-82.543163 63.494741l-222.231592-120.640008c-19.048422-6.349474-38.096844-6.349474-57.145266 0L261.401076 1015.91585c-44.446318 25.397896-95.242111-12.698948-82.543162-63.494741l44.446318-260.328436c6.349474-19.048422 0-38.096844-19.048422-57.145267L20.121062 444.463184c-38.096844-31.74737-19.048422-95.242111 31.74737-101.591585l247.629489-38.096844c19.048422 0 38.096844-12.698948 44.446318-31.74737L458.234772 38.096844c19.048422-50.795792 82.543163-50.795792 101.591585 0z m0 0"
+                                                fill="#EA9518" />
+                                        </svg></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-h">
+        <div class="h-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center" style="width: 50%;">
+                        <img src="banner/TP care-02 2.png" alt="Nhận hỗ trợ" style="width: 500px;">
+                    </div>
+                    <div class="form-cont" style="width: 50%;">
+                        <form class="form-contact" novalidate="novalidate">
+                            <div class="title">
+                                ĐỂ LẠI LIÊN HỆ NHẬN TƯ VẤN
+                            </div>
+
+                            <input name="__RequestVerificationToken" type="hidden"
+                                value="E8gOO_dLyQlul68k_WL9_wEzy86AY8ImAV2e1yXXtpavNwCdZecvR1lqkeakE1EQfGouAn_osU2F-UrohYQ6PXvsC-iA23r0iMbYLQVo-r41">
+                            <div>
+                                <input class="form-control" data-val="true" data-val-length="Tối đa 100 ký tự"
+                                    data-val-length-max="100" data-val-required="Hãy nhập họ tên" id="FullName"
+                                    name="FullName" placeholder="Họ và tên" required="required" type="text" value="">
+                                <span class="field-validation-valid" data-valmsg-for="FullName"
+                                    data-valmsg-replace="true"></span>
+                            </div>
+                            <div>
+                                <input class="form-control" data-val="true" data-val-length="Tối đa 20 ký tự"
+                                    data-val-length-max="10" data-val-regex="Số điện thoại không đúng định dạng!"
+                                    data-val-regex-pattern="^\(?(09|03|07|08|05)\)?[-. ]?([0-9]{8})$"
+                                    data-val-required="Hãy nhập số điện thoại" id="Mobile" name="Mobile"
+                                    placeholder="Số điện thoại" required="required" type="text" value="">
+                                <span class="field-validation-valid" data-valmsg-for="Mobile"
+                                    data-valmsg-replace="true"></span>
+                            </div>
+                            <div>
+                                <input class="form-control" data-val="true" data-val-email="Email không hợp lệ"
+                                    data-val-length="Tối đa 100 ký tự" data-val-length-max="100"
+                                    data-val-required="Hãy nhập Email" id="Email" name="Email" placeholder="Email"
+                                    type="text" value="">
+                                <span class="field-validation-valid" data-valmsg-for="Email"
+                                    data-valmsg-replace="true"></span>
+                            </div>
+                            <div>
+                                <textarea cols="20" style="width: 430px;border-radius: 10px;" data-val="true"
+                                    data-val-length="The field Nội dung must be a string with a maximum length of 4000."
+                                    data-val-length-max="4000" id="Body" name="Body" placeholder="Lời nhắn"
+                                    rows="4"></textarea>
+                                <span class="field-validation-valid" data-valmsg-for="Body"
+                                    data-valmsg-replace="true"></span>
+                            </div>
+                            <button type="submit" class="btn-main">
+                                GỬI YÊU CẦU
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-1" style="margin-top: -50px;">
+        <div class="container">
+            <div class="title" style="margin-left: 30%;">
+                NƯỚC RỬA BÁT SINH HỌC
+            </div>
+            <div class="product-form" style="display: flex; ">
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="/detailprodct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product11.jpg" 
+                                    class="image lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="/detailprodct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 4l hương cam gừng
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product12.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 4l không mùi
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product13.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 4l hương cam quế
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product1.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 1.9l hương cam gừng
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\product4.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 1.9l không mùi
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product10.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Combo bộ 3 Nước rửa bát Công nghệ sinh học TPCare 6IN1 chai 1lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product8.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare 1.9l hương cam quế
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product5.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghệ sinh học TPCare hương cam gừng 1lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product2.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghê sinh học TPCare không mùi 1lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product4.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước rửa bát công nghê sinh học TPCare hương cam quế 1lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-2" style="margin-top: -50px; ">
+        <div class="container">
+            <div class="title" style="margin-left: 30%;">
+                NƯỚC GIẶT XẢ ĐẬM ĐẶC
+            </div>
+            <div class="product-formm" style="display: flex; margin-left: -50px;">
+                <div class="pro" style="margin-right: 20px;">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\product1.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước Giặt xả công nghê sinh học TPCare hương cam quế 1lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro" style="margin-right: 20px;">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product8.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương nắng mai 1,9lit
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro" style="margin-right: 20px;">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product10.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product1.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="product-1" style="margin-top: -50px;">
+        <div class="container">
+            <div class="title" style="margin-left: 30%;">
+                NƯỚC LAU SÀN THẢO MỘC
+            </div>
+            <div class="product-form" style="display: flex;">
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product1.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương chanh sả can 2 lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product2.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương cam quế can 2 lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product3.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương bạc hà can 2 lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product4.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương anh đào can 2 lít
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product5.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương chanh sả can 900ml
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product6.png"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương cam quế can 900ml
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="meta-vote">
+                                <div class="star-box">
+                                    <div class="star-gray">
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                        <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #edbc0b;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="detailproduct.html">
+                                <div class="logo">
+                                    <img src="images/logo.png" alt="Logo">
+                                </div>
+                                <img src="product\Product1.jpg"
+                                    alt="Nước giặt xả đậm đặc TPCare 6in1 hương hoa hồng 1,9lit"
+                                    class="image ls-is-cached lazyloaded">
+                            </a>
+                        </div>
+                        <div class="subject truncate">
+                            <a href="detailproduct.html">
+                                Nước lau sàn thảo mộc TPCare hương bạc hà can 900ml
+                            </a>
+                        </div>
+                        <div class="meta-vote">
+                            <div class="star-box">
+                                <div class="star-gray">
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                    <i class="fa-sharp fa-solid fa-star fa-2xs" style="color: #e1ff00;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container" style="display: flex;">
+            <div class="cmt">
+                <div class="col-feedback">
+                    <div class="feedback-h">
+                        <div class="title-section"
+                            style="color: #fff; margin-top: 50px;width: 500px;margin-left: -20px;">
+                            Khách hàng nói về TPCare
+                        </div>
+                        <div class="slick-feedback" style="width: 500px;height: 210px;">
+                            <div class="feedback-list" style="display: flex;">
+                                <div class="ctm-img">
+                                    <img src="feedback\feedback1.png" alt="Bà Trương Thanh Hồng"
+                                        class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="body">
+                                    <div class="name-role">
+                                        Bà Trương Thanh Hồng
+                                    </div>
+                                    <div class="role">
+                                        Khách hàng
+                                    </div>
+                                    <div class="cnt">
+                                        TPCare đậm đặc hương thơm dễ chịu chất lượng điểm 10 (5*)
+                                        mình đã sử dụng giặt tay đến hôm nay 11 tháng chất
+                                        lượng vẫn như ban đầu.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-list" style="display: flex;">
+                                <div class="ctm-img">
+                                    <img src="feedback\feedback4.png" alt="Bà Tô Thị Ngọc Linh"
+                                        class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="body">
+                                    <div class="name-role">
+                                        Bà Tô Thị Ngọc Linh
+                                    </div>
+                                    <div class="role">
+                                        Khách hàng
+                                    </div>
+                                    <div class="cnt">
+                                        Nước giặt này rất thích, lần đầu tiên tôi mua nước giặt này,
+                                        bình rất to và nặng sử dụng cho máy giặt tuyệt vời.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-list" style="display: flex;">
+                                <div class="ctm-img">
+                                    <img src="feedback\feedback2.png" alt="Bà Nguyễn Thị Hà"
+                                        class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="body">
+                                    <div class="name-role">
+                                        Bà Nguyễn Thị Hà
+                                    </div>
+                                    <div class="role">
+                                        Khách hàng
+                                    </div>
+                                    <div class="cnt">
+                                        Mình thích dùng nước lau sàn của TPCare vì nó có tính tẩy rửa
+                                        vừa phải do nhà mình lót sàn gỗ nên mình hay dùng nước lau mùi
+                                        thơm hoa anh đào rất thơm.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-list" style="display: flex;">
+                                <div class="ctm-img">
+                                    <img src="feedback\feedback5.png" alt="Bà Nguyễn Thị Thanh Phương"
+                                        class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="body">
+                                    <div class="name-role">
+                                        Bà Nguyễn Thị Thanh Phương
+                                    </div>
+                                    <div class="role">
+                                        Khách hàng
+                                    </div>
+                                    <div class="cnt">
+                                        Mua mấy chai lớn này xài chủ yếu tiết kiệm. Mình xài thấy nước
+                                        này rửa sạch nè, mấy khi chiên rửa chảo bằng nước rửa này thấy
+                                        sạch bóng không còn bị nhờn dầu
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-list" style="display: flex;">
+                                <div class="ctm-img">
+                                    <img src="feedback\feedback3.png" alt="Bà Nguyễn Thị Quế"
+                                        class=" ls-is-cached lazyloaded">
+                                </div>
+                                <div class="body">
+                                    <div class="name-role">
+                                        Bà Nguyễn Thị Quế
+                                    </div>
+                                    <div class="role">
+                                        Khách hàng
+                                    </div>
+                                    <div class="cnt">
+                                        Sản phẩm dùng rất oki. Mùi thơm dịu nhẹ. Vừa giặt vừa xả quá
+                                        tiện lợi. Các bé nhà mình rất thích mùi hương này. Giặt xong
+                                        không bị nồng nặc quá. Sẽ lại ủng hộ shop lần sau.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <!-- right -->
+                <div class="col-video" style="width: 620px; height: 420px;">
+                    <div class="title-section" style="color: #fff;">
+                        truyền thông nói về tpcare
+                    </div>
+                    <div class="video-feedback">
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Uu2Gb4yyqfk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="event-hot">
+        <div class="container">
+            <div class="title" style="margin-left: 300px;margin-top: 10px;">TIN TỨC SỰ KIỆN</div>
+            <div class="content-eventhot">
+                <!-- p1 -->
+                <div>
+                    <div class="slick-event">
+                        <div class="ev" style="display: flex; ">
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="" width="350px" height="200px">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                            <div class="col-event">
+                                <div class="img-event">
+                                    <img src="banner/event1.jpg" alt="">
+                                </div>
+                                <div class="date-event">29/07/2023</div>
+                                <div class="title-event">Một số lưu ý khi sử dụng nước lau sàn TPCare</div>
+                                <div class="content-evt">Nước lau sàn là hàng tiêu dùng không thể thiếu trong mỗi gia
+                                    đình.
+                                    Đa số các loại nước lau sàn có mặt trên thị trường hiện...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- p2 -->
+                <div class="new-hot" style="margin-right: 0;">
+                    <div class="nw">
+                        <div class="cnst-eventp2" style="margin-top: -2px;">
+                            <div style="display: flex;">
+                                <div class="date-event" style="margin-top: 20px;">07/02/2023</div>
+                                <div class="icon-hot" style="width: 130px; height: 40px;">Hot</div>
+                            </div>
+                            <div class="" style="margin-left: 20px;margin-top: 10px;"><a href="">TPCare tham gia hội chợ
+                                    thương mại Việt Lào
+                                    2022</a> </div>
+                        </div>
+                        <div class="cnst-eventp2">
+                            <div style="display: flex;">
+                                <div class="date-event" style="margin-top: 20px;">07/02/2023</div>
+                                <div class="icon-hot" style="width: 140px; height: 40px;">Hot</div>
+                            </div>
+                            <div class="" style="margin-left: 20px;margin-top: 10px;"><a href="">TPCare tham gia hội chợ
+                                    thương mại Việt Lào
+                                    2022</a> </div>
+                        </div>
+                        <div class="cnst-eventp2">
+                            <div style="display: flex;">
+                                <div class="date-event" style="margin-top: 20px;">07/02/2023</div>
+                                <div class="icon-hot" style="width: 130px; height: 40px;">Hot</div>
+                            </div>
+                            <div class="" style="margin-left: 20px;margin-top: 10px;"><a href="">TPCare tham gia hội chợ
+                                    thương mại Việt Lào
+                                    2022</a> </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn-about-content"
+                style="margin-bottom: 10px;text-align: center; margin-left: 500px;margin-top: -30px;margin-bottom: 20px;">
+                Xem Thêm
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script>
+</body>
+<footer>
+    <footer-header>
+        <div class="ft">
+            <div class="container">
+                <div><br></div>
+                <div class="title-ft" style="margin-top: -5px;">Đăng ký nhận tư vấn</div>
+                <div class="input-sion">
+                    <input type="text" class="inputName"
+                        style="width: 300px; height: 38px;border-radius: 50px; margin-right: 15px;"
+                        placeholder="     Họ và Tên">
+                    <input type="text" class="inputEmail"
+                        style="width: 300px; height: 38px;border-radius: 50px;margin-right: 15px;"
+                        placeholder="     Email">
+                    <input type="text" class="inputPhone"
+                        style="width: 300px; height: 38px;border-radius: 50px;margin-right: 15px;"
+                        placeholder="     Số Điện Thoại">
+                    <button class="btn-signup">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </footer-header>
+    <footer-body >
+        <div style="background-color: #f0f0f0;">
+        <div class="container">
+            <div class="coset" >
+                <div class="logo" style="margin-left: -50px;margin-top: 20px; margin-bottom: 20px;"><img
+                        src="images/logo.png" style="width: 100px;height: 50px;" alt=""></div>
+                <div class="footer-content" style="display: flex;">
+                    <div class="col-adress" style="margin-left: -50px;">
+                        <div>
+                            <i class="fa-solid fa-house fa-2xs"></i>
+                            <a style="font-weight: bold;color: #26355F;">
+                                Công ty TNHH Xuất Nhập Khẩu Xuân Trường Phát
+                            </a>
+                        </div>
+                        <div><i class="fa-solid fa-location-dot fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Địa chỉ:</a>
+                            <a href="https://goo.gl/maps/u2thtbTbUZvNq4qRA" style="color: #414141;"> SN16, ngách 2/30
+                                Đường tiếp giáp Văn Phú,<br> &ensp; Phú La, Hà Đông, HN</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Hotline:</a>
+                            <a href="tel:0247.3088.845" style="color: #414141;"> 0247.3088.845</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Email:</a>
+                            <a href="mailto:tpcarevietnam@gmail.com" style="color: #414141;">
+                                tpcarevietnam@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-bag-shopping fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Shopee.vn</a>
+                            <a href="https://shopee.vn/tpcarevietnam" style="color: #414141;"> tpcarevietnam</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-shop fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Cửa hàng 1:</a>
+                            <a href="https://goo.gl/maps/JYEaZLgBa3N7LehF9" style="color: #414141;"> Số 4, Ngô Thì Nhậm,
+                                Hà Cầu, Hà Đông,<br> &ensp; HN</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-shop fa-2xs"></i>
+                            <a style="color: #26355F; font-weight: bold;">Cửa hàng 2:</a>
+                            <a href="" style="color: #414141;"> 47 Tô Hiệu, P.Nguyễn Trãi, Hà Đông, HN <br> &ensp;
+                                Nhà cung cấp sản phẩm vệ sinh gia đình SẠCH -THƠM- <br> &ensp; AN TOÀN tuyệt đối cho
+                                sức khỏe người tiêu dùng.</a>
+                        </div>
+                    </div>
+                    <div class="col-about">
+                        <div style="font-weight: bold;">Thông tin</div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colabout" href="">Giới thiệu về chúng tôi</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colabout" href="">Sản phẩm</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colabout" href="">Liên hệ</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colabout" href="">Tin tức</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colabout" href="">Tuyển dụng</a>
+                        </div>
+                    </div>
+                    <div class="col-set">
+                        <div style="font-weight: bold;">Hướng dẫn mua hàng</div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colset" href="">Chính sách giao hàng và đổi trả</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colset" href="">Chính sách vân chuyển</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colset" href="">Chính sách thanh toán</a>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <a class="style-colset" href="">Chính sách bán hàng</a>
+                        </div>
+                    </div>
+                    <div class="col-fanpage">
+                        <div>
+                            <div style="font-weight: bold;">FANPAGE</div>
+                        </div>
+                        <!-- <div class="srcfanpage" style="margin-top: 10px;">
+                            <iframe src="https://www.facebook.com/khanhhoa410/" frameborder="0"></iframe>
+                        </div> -->
+                        <div class="embed-responsive mt-4">
+                            <div class="fb-page" data-href="https://www.facebook.com/Thietkewebsite.vico" data-tabs=""
+                                data-width="500" data-small-header="false" data-adapt-container-width="true"
+                                data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/Thietkewebsite.vico"
+                                    class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/Thietkewebsite.vico">HTCONS</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div style="font-weight: bold;">Liên kết mạng xã hội</div>
+                        <div style="display: flex;margin-top: 10px;">
+                            <div style="margin-right: 8px;"><i class="fa-brands fa-square-facebook fa-2xl"></i></div>
+                            <div style="margin-right: 8px;"><i class="fa-brands fa-square-instagram fa-2xl"></i></div>
+                            <div style="margin-right: 8px;"><i class="fa-brands fa-square-youtube fa-2xl"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer-body>
+    <footer-end>
+        <div class="Copyright"
+            style="width: 100%;height: 40px;background-color: #26355F;text-align: center; color: #fff;">
+            © Copyright by TPcare.vn 2022. Designed by Vicogroup.vn
+        </div>
+    </footer-end>
+    <a href="https://zalo.me/0247.3088.845" target="_blank" class="zalo">
+        <img src="/Content/images/img-main/zalo-logo.png" alt="Zalo">
+    </a>
+    <div class="fix_tel">
+        <div class="ring-alo-phone ring-alo-green ring-alo-show" id="ring-alo-phoneIcon" style="right: 150px; bottom: -12px;">
+            <div class="ring-alo-ph-circle">
+            </div>
+            <div class="ring-alo-ph-circle-fill">
+            </div>
+            <div class="ring-alo-ph-img-circle">
+                <a href="tel:0912345678"><img class="lazy" src="https://codfe.com/wp-content/uploads/2020/08/call.png" alt="G"></a>
+            </div>
+        </div>
+        <div class="tel">
+            <a href="tel:0912345678">
+            <p class="fone">
+                034 624 8365
+            </p>
+            </a>
+        </div>
+    </div>
+</footer>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
+    nonce="di1pgAbX">
+    </script>
+
+</html>
